@@ -1,11 +1,7 @@
 public class NotebookTest {
     public static void main(String[] args) {
 
-        Notebook notebook1 = new Notebook();
-        notebook1.brand = "Lenovo";
-        notebook1.inches = 15.4;
-        notebook1.isCdDr = true;
-        notebook1.model = "AM2390V";
+        Notebook notebook1 = new Notebook("Lenovo", "AM2390V", 15.4, true);
 
         System.out.println("Marka komputera: " + notebook1.brand);
         System.out.println("Model komputera: " + notebook1.model);
@@ -13,11 +9,7 @@ public class NotebookTest {
         System.out.println("Napęd CD-RD: " + notebook1.isCdDr);
         System.out.println("\n");
 
-        Notebook notebook2 = new Notebook();
-        notebook2.brand = "HP";
-        notebook2.inches = 17;
-        notebook2.isCdDr = false;
-        notebook2.model = "9063FG";
+        Notebook notebook2 = new Notebook("HP", "9063FG", 17,false);
 
         System.out.println("Marka komputera: " + notebook2.brand);
         System.out.println("Model komputera: " + notebook2.model);

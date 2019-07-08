@@ -4,6 +4,10 @@ public class Notebook {
     double inches;
     boolean isCdDr;
 
-    Notebook(){
+    Notebook(String br, String mo, double in, boolean cd){
+        brand = br;
+        model = mo;
+        inches = in;
+        isCdDr = cd;
     }
 }
